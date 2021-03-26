@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EDU-COVID</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>EDU-COVID</h1>
+	</header>
+
+	<div class="nav-bar">
+		<div id="side_navBar" class="side_nav">
+		  <a href="index.html" id="home-nav">Home</a>
+		  <a href="pencegahan.html" id="cegah-nav">Pencegahan Covid-19</a>
+		  <a href="data.html" id="data-nav">Data dan Statistik</a>
+		  <a href="#" id="kuis-nav">Kuis</a>
+		  <a href="kontak.html" id="kontak-nav">Kontak</a>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="kuis-content">
+			<br>
+			<h1>Kuis</h1>
+			<p>Kuis ini terdiri dari 5 berisi pertanyaan yang menguji pengetahuan
+			user berkaitan dengan virus COVID-19 dan pencegahannya.</p>
+			<br>
+			<div class="question">
+				<b>1. Virus Corona (COVID-19) yang menyerang manusia muncul di negara ... pada awal tahun 2020.</b><br />
+				<input class="ansA" onclick="periksa(1, this.value)" type="radio" name="quest1" value="a" /><label for="ansA">A. Cina</label><br />
+				<input class="ansB" onclick="periksa(1, this.value)" type="radio" name="quest1" value="b" /><label for="ansB">B. Italy</label><br />
+				<input class="ansC" onclick="periksa(1, this.value)" type="radio" name="quest1" value="c" /><label for="ansC">C. Amerika</label><br />
+				<input class="ansD" onclick="periksa(1, this.value)" type="radio" name="quest1" value="d" /><label for="ansD">D. Indonesia</label><br />
+				<br>
+				<b>2. COVID-19 bisa masuk melalui anggota-anggota tubuh di bawah ini, kecuali...</b><br />
+				<input class="ansA" onclick="periksa(2, this.value)" type="radio" name="quest2" value="a" /><label for="ansA">A. Mata</label><br />
+				<input class="ansB" onclick="periksa(2, this.value)" type="radio" name="quest2" value="b" /><label for="ansB">B. Hidung</label><br />
+				<input class="ansC" onclick="periksa(2, this.value)" type="radio" name="quest2" value="c" /><label for="ansC">C. Mulut</label><br />
+				<input class="ansD" onclick="periksa(2, this.value)" type="radio" name="quest2" value="d" /><label for="ansD">D. Telinga</label><br />
+				<br>
+				<b>3. Dibawah ini adalah media penyebaran virus Corona, kecuali...</b><br />
+				<input class="ansA" onclick="periksa(3, this.value)" type="radio" name="quest3" value="a" /><label for="ansA">A. Bersalaman/Sentuhan tangan</label><br />
+				<input class="ansB" onclick="periksa(3, this.value)" type="radio" name="quest3" value="b" /><label for="ansB">B. Udara</label><br />
+				<input class="ansC" onclick="periksa(3, this.value)" type="radio" name="quest3" value="c" /><label for="ansC">C. Percikan batuk dan bersin</label><br />
+				<input class="ansD" onclick="periksa(3, this.value)" type="radio" name="quest3" value="d" /><label for="ansD">D. Benda-benda Padat</label><br />
+				<br>
+				<b>4. Cuci tangan yang paling baik dilakukan dengan menggunakan sabun pada...</b><br />
+				<input class="ansA" onclick="periksa(4, this.value)" type="radio" name="quest4" value="a" /><label for="ansA">A. Air mengalir</label><br />
+				<input class="ansB" onclick="periksa(4, this.value)" type="radio" name="quest4" value="b" /><label for="ansB">B. Air dalam wadah</label><br />
+				<input class="ansC" onclick="periksa(4, this.value)" type="radio" name="quest4" value="c" /><label for="ansC">C. Air kolam</label><br />
+				<input class="ansD" onclick="periksa(4, this.value)" type="radio" name="quest4" value="d" /><label for="ansD">D. Air hangat</label><br />
+				<br>
+				<b>5. Upaya psikologis agar daya tahan tubuh kuat untuk menjaga agar tidak tertular COVID-19 adalah..</b><br />
+				<input class="ansA" onclick="periksa(5, this.value)" type="radio" name="quest5" value="a" /><label for="ansA">A. Tidak panik, tidak stres, dan tetap waspada   </label><br />
+				<input class="ansB" onclick="periksa(5, this.value)" type="radio" name="quest5" value="b" /><label for="ansB">B. Banyak berdoa, optimis, dan pantang menyerah</label><br />
+				<input class="ansC" onclick="periksa(5, this.value)" type="radio" name="quest5" value="c" /><label for="ansC">C. Banyak hiburan, bersuka cita, dan bersenang-senang</label><br />
+				<input class="ansD" onclick="periksa(5, this.value)" type="radio" name="quest5" value="d" /><label for="ansD">D. Banyak berolah raga, bernyanyi, dan humor</label><br />
+				<br>
+				<button type="button" id="hasil" onclick="submit()">Submit</button>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<a href="https://rsyarsi.co.id/">RS Yarsi</a>
+		<a href="https://covid19.go.id/">Covid_19</a>
+		<a href="https://github.com/AssegafInsani/UTS_1402019018">Github</a>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
